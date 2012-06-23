@@ -26,7 +26,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>out\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <Content Include="doc\NewsGoggles.html" />
     <Content Include="lib\alice.tuprolog.dll" />
     <Content Include="lib\IKVM.OpenJDK.Core.dll" />
     <Content Include="lib\IKVM.Runtime.dll" />
@@ -68,6 +69,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="scripts\ikvmc_compile_2p_jar.bat" />
+    <Content Include="scripts\ikvmc.usage.txt" />
     <Content Include="theories\Articles.pl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

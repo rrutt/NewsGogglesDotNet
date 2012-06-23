@@ -1,25 +1,26 @@
 News Goggles - Rules Engine in Prolog and C#
 
   "News Goggles" is the name of an imaginary web site focused on daily
-  news feeds. A proof-of-concept rules engine uses Prolog and Java integration
+  news feeds. A proof-of-concept rules engine uses Prolog and C# integration
   to apply matchmaker rules. These rules dispatch news feeds to
   readers based on their personal preferences.
 
   This demonstration rules engine uses tuProlog (also known as 2p) 
   from the University of Bologna.
+  
+  Since tuProlog is written in Java, the IKVM tool set was used to convert the
+  Java byte code in 2p.jar to a Microsoft .NET MSIL assembly alice.tuprolog.dll.
 
-  // ++ Change this to .NET
   To run the demo, open a command-prompt (terminal) window and navigate 
-  to the out sub-folder, containing the JAR files. 
+  to the out sub-folder, containing the executable files. 
   Enter one of the following commands. 
   The program will process rules, display progress messages and results, and then exit.
   
-    java -jar NewsGoggles.jar
+    NewsGoggles
   
-    java -jar NewsGoggles.jar -trace
+    NewsGoggles -trace
     
-    java -jar NewsGoggles.jar -test
-  // -- Change this to .NET
+    NewsGoggles -test
 
   For more information, open the NewsGoggles.html file from the doc sub-folder
   in any web browser.

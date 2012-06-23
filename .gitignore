@@ -11,6 +11,9 @@ obj
 #*.exe
 *.o
 *.so
+*.pdb
+*.vshost.exe
+*.vshost.exe.manifest
 
 # Packages #
 ############

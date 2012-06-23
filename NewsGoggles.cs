@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 using alice.tuprolog;
@@ -13,7 +11,6 @@ namespace Com.Live.RRutt.NewsGogglesDotNet
 {
   public class NewsGoggles : OutputListener
   {
-
     public Prolog engine;
 
     private static bool testing = false;
@@ -21,8 +18,7 @@ namespace Com.Live.RRutt.NewsGogglesDotNet
     public NewsGoggles(string[] args)
     {
       System.Console.Out
-          .WriteLine("Rick Rutt's News Goggles - Using the tuProlog system "
-              + Prolog.getVersion());
+          .WriteLine("Rick Rutt's News Goggles - Using the tuProlog system - With help from IKVM.NET");
 
       PrologLibrary.traceEnabled = false;
 
